@@ -1,0 +1,139 @@
+.main-about-company {
+    position: relative;
+    padding-top: 200px;
+
+    @media (max-width: $breakpoint-xl) {
+        padding-top: 180px;
+    }
+    @media (max-width: $breakpoint-lg) {
+        padding-top: 120px;
+    }
+    @media (max-width: $breakpoint-md) {
+        padding-top: 100px;
+    }
+
+    &__bg {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 286px;
+        width: 2320px;
+        height: 709px;
+        z-index: -1;
+        user-select: none;
+
+        @media (max-width: $breakpoint-lg) {
+            top: initial;
+            bottom: -238px;
+        }
+        @media (max-width: $breakpoint-md) {
+            bottom: 50px;
+        }
+    }
+    
+    &__text_flex {
+        display: flex;
+
+        @media (max-width: $breakpoint-lg) {
+            flex-direction: column;
+        }
+    }
+
+    &__text-topic {
+        font-size: 20px;
+        line-height: 20px;
+        text-transform: uppercase;
+        font-weight: normal;
+        margin-right: 189px;
+        color: $color-gray;
+        font-family: $main-font;
+        white-space: nowrap;
+
+        @media (max-width: $breakpoint-xl) {
+            margin-right: 198px;
+        }
+        @media (max-width: $breakpoint-lg) {
+            margin-bottom: 24px;
+            font-size: 16px;
+            line-height: 16px;
+        }
+        @media (max-width: $breakpoint-md) {
+            margin-right: 0;
+        }
+    }
+
+    &__text-description {
+        font-size: 36px;
+        line-height: 140%;
+        text-transform: uppercase;
+        color: $color-gray;
+        font-family: $main-font;
+        font-weight: normal;
+        margin-bottom: 32px;
+
+        @media (max-width: $breakpoint-xl) {
+            font-size: 30px;
+        }
+        @media (max-width: $breakpoint-lg) {
+            width: 100%;
+            font-size: 24px;
+        }
+    }
+
+    &__text-paragraph {
+        font-size: 18px;
+        line-height: 150%;
+        color: $color-gray-72;
+        font-family: $main-font;
+    }
+
+    &__text-box {
+        margin-bottom: 56px;
+    }
+
+    &__numbers-box {
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: $breakpoint-md) {
+            flex-direction: column;
+        }
+    }
+
+    &__numbers_flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &__numbers {
+        text-align: center;
+        font-size: 64px;
+        line-height: 64px;
+        color: $color-blue;
+        margin-bottom: 32px;
+        font-family: $main-font;
+    }
+
+    &__numbers-description {
+        text-align: center;
+        font-size: 18px;
+        line-height: 150%;
+        color: $color-gray-72;
+        font-family: $main-font;
+
+        @media (max-width: $breakpoint-xl) {
+            width: 178px;
+        }
+        @media (max-width: $breakpoint-md) {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__numbers-description_margin {
+        @media (max-width: $breakpoint-md) {
+            margin-bottom: 0px;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+.contacts {
+  padding: 64px 0 200px 0;
+}
+.contacts__flex-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}

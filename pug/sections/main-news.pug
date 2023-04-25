@@ -1,0 +1,23 @@
+mixin main-news
+    section.main-news
+        img.main-news__bg(src="/images/backgrounds/bg-news.svg" alt="background news")
+        .container
+            .main-news__box
+                h4.main-news__topic новости
+                p.main-news__text-description Актуальные новости и события в сфере молочной промышленности
+
+            .main-news__links-box
+                .main-news__micro-news
+                    a.main-news__image-box(href='/novosti-interesnoe.html')
+                        img.main-news__image(src='../../images/news/cheese-main.jpg')
+                        h4.main-news__image-description О чем говорит рисунок сыра
+                        p.main-news__image-hash #интересное
+                    a.main-news__image-box(href='/novosti-tehnologii.html')
+                        img.main-news__image(src='../../images/news/techno-main.jpg')
+                        h4.main-news__image-description.main-news__image-description_width Разработка и производство заквасок для кисломолочных продуктов
+                        p.main-news__image-hash #технологии
+
+                a.main-news__big-news(href='/novosti-innovacii.html')
+                    h4.main-news__big-news-topic Магнитные микроботы против опасных бактерий в молоке
+                    p.main-news__big-news-paragraph Крошечные системы из намагниченных частиц и иммуноглобулинов позволят легко и дешево удалять из молока и молочных продуктов клетки золотистых стафилококков.
+                    p.main-news__big-news-hash #инновации

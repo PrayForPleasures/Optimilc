@@ -1,0 +1,40 @@
+// .button
+// or
+// .button.button-full-width
+
+.button {
+    position: relative;
+    width: max-content;
+    height: 50px;
+    padding: 0 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $color-blue;
+    outline: none;
+    border: 2px solid $color-blue;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    transition: 0.3s background linear;
+    user-select: none;
+    border-radius: 30px;
+
+    &:active,
+    &:focus {
+        color: #fff;
+    }
+
+    &:hover {
+        color: $color-blue;
+        background: #fff;
+    }
+
+    &-full-width {
+        width: 100%;
+        height: 56px;
+        border-radius: 40px;
+        padding: 0;
+    }
+}

@@ -1,0 +1,61 @@
+html,
+body {
+    overflow: hidden;
+    height: 100%;
+}
+
+body {
+    font-family: $main-font;
+    font-size: 16px;
+    color: $color-main;
+    background: $color-light-blue;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    &.off-scroll {
+        overflow-y: hidden;
+    }
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 45px;
+    max-width: 1366px;
+
+    @media (max-width: $breakpoint-xl) {
+        padding: 0 20px;
+        max-width: 1025px;
+    }
+    @media (max-width: $breakpoint-lg) {
+        max-width: 768px;
+    }
+    @media (max-width: $breakpoint-md) {
+        padding: 0 16px;
+        max-width: 360px;
+    }
+}
+
+.main-content {
+    min-height: calc(100vh - 400px);
+}
+
+.hidden-svg {
+    g {
+        opacity: 1;
+    }
+
+    path,
+    circle {
+        &[fill] {
+            fill: currentColor;
+            fill-opacity: 1;
+            transition: opacity 0.3s all;
+        }
+
+        &[stroke] {
+            stroke: currentColor;
+            stroke-opacity: 1;
+            transition: opacity 0.3s all;
+        }
+    }
+}

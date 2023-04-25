@@ -1,0 +1,55 @@
+.modal-service-request {
+    .modal__content {
+        width: 640px;
+        min-height: 630px;
+        padding: 0 60px;
+        padding-top: 70px;
+        padding-bottom: 56px;
+        text-align: center;
+        background-color: #fff;
+        overflow-y: auto;
+
+
+        @media (max-width: $breakpoint-md) {
+            width: 360px;
+            min-height: initial;
+            padding: 0 16px;
+            padding-top: 80px;
+            padding-bottom: 65px;
+        }
+    }
+
+    &__head {
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 140%;
+        margin-bottom: 8px;
+
+        @media (max-width: $breakpoint-md) {
+            font-size: 32px;
+        }
+    }
+
+    &__desc {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 140%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        max-width: 500px;
+
+        @media (max-width: $breakpoint-md) {
+            font-size: 20px;
+        }
+    }
+
+    .main-feedback__form-part {
+        max-width: 400px;
+        margin: 0 auto;
+        text-align: left;
+
+        @media (max-width: $breakpoint-md) {
+            max-width: 100%;
+        }
+    }
+}

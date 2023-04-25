@@ -1,0 +1,167 @@
+@font-face {
+    font-family: 'Prometo';
+    src: url('../fonts/Prometo-LightItalic.eot');
+    src: local('Prometo Light Italic'), local('Prometo-LightItalic'),
+        url('../fonts/Prometo-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Prometo-LightItalic.woff2') format('woff2'),
+        url('../fonts/Prometo-LightItalic.woff') format('woff'),
+        url('../fonts/Prometo-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Prometo';
+    src: url('../fonts/Prometo-MediumItalic.eot');
+    src: local('Prometo Medium Italic'), local('Prometo-MediumItalic'),
+        url('../fonts/Prometo-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Prometo-MediumItalic.woff2') format('woff2'),
+        url('../fonts/Prometo-MediumItalic.woff') format('woff'),
+        url('../fonts/Prometo-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Prometo';
+    src: url('../fonts/Prometo-XBoldItalic.eot');
+    src: local('Prometo XBold Italic'), local('Prometo-XBoldItalic'),
+        url('../fonts/Prometo-XBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Prometo-XBoldItalic.woff2') format('woff2'),
+        url('../fonts/Prometo-XBoldItalic.woff') format('woff'),
+        url('../fonts/Prometo-XBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Prometo';
+    src: url('../fonts/Prometo-Medium.eot');
+    src: local('Prometo Medium'), local('Prometo-Medium'),
+        url('../fonts/Prometo-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Prometo-Medium.woff2') format('woff2'),
+        url('../fonts/Prometo-Medium.woff') format('woff'),
+        url('../fonts/Prometo-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Prometo';
+    src: url('../fonts/Prometo-ThinItalic.eot');
+    src: local('Prometo Thin Italic'), local('Prometo-ThinItalic'),
+        url('../fonts/Prometo-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Prometo-ThinItalic.woff2') format('woff2'),
+        url('../fonts/Prometo-ThinItalic.woff') format('woff'),
+        url('../fonts/Prometo-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Prometo';
+    src: url('../fonts/Prometo-Black.eot');
+    src: local('Prometo Black'), local('Prometo-Black'),
+        url('../fonts/Prometo-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Prometo-Black.woff2') format('woff2'),
+        url('../fonts/Prometo-Black.woff') format('woff'),
+        url('../fonts/Prometo-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Prometo';
+    src: url('../fonts/Prometo-Light.eot');
+    src: local('Prometo Light'), local('Prometo-Light'),
+        url('../fonts/Prometo-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Prometo-Light.woff2') format('woff2'),
+        url('../fonts/Prometo-Light.woff') format('woff'),
+        url('../fonts/Prometo-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Prometo';
+    src: url('../fonts/Prometo-Thin.eot');
+    src: local('Prometo Thin'), local('Prometo-Thin'),
+        url('../fonts/Prometo-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Prometo-Thin.woff2') format('woff2'),
+        url('../fonts/Prometo-Thin.woff') format('woff'),
+        url('../fonts/Prometo-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Prometo';
+    src: url('../fonts/Prometo-Bold.eot');
+    src: local('Prometo Bold'), local('Prometo-Bold'),
+        url('../fonts/Prometo-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Prometo-Bold.woff2') format('woff2'),
+        url('../fonts/Prometo-Bold.woff') format('woff'),
+        url('../fonts/Prometo-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Prometo';
+    src: url('../fonts/Prometo-Italic.eot');
+    src: local('Prometo Italic'), local('Prometo-Italic'),
+        url('../fonts/Prometo-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Prometo-Italic.woff2') format('woff2'),
+        url('../fonts/Prometo-Italic.woff') format('woff'),
+        url('../fonts/Prometo-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Prometo';
+    src: url('../fonts/Prometo-XBold.eot');
+    src: local('Prometo XBold'), local('Prometo-XBold'),
+        url('../fonts/Prometo-XBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Prometo-XBold.woff2') format('woff2'),
+        url('../fonts/Prometo-XBold.woff') format('woff'),
+        url('../fonts/Prometo-XBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Prometo';
+    src: url('../fonts/Prometo-BoldItalic.eot');
+    src: local('Prometo Bold Italic'), local('Prometo-BoldItalic'),
+        url('../fonts/Prometo-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Prometo-BoldItalic.woff2') format('woff2'),
+        url('../fonts/Prometo-BoldItalic.woff') format('woff'),
+        url('../fonts/Prometo-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Prometo';
+    src: url('../fonts/Prometo-BlackItalic.eot');
+    src: local('Prometo Black Italic'), local('Prometo-BlackItalic'),
+        url('../fonts/Prometo-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Prometo-BlackItalic.woff2') format('woff2'),
+        url('../fonts/Prometo-BlackItalic.woff') format('woff'),
+        url('../fonts/Prometo-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Prometo';
+    src: url('../fonts/Prometo.eot');
+    src: local('Prometo'),
+        url('../fonts/Prometo.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Prometo.woff2') format('woff2'),
+        url('../fonts/Prometo.woff') format('woff'),
+        url('../fonts/Prometo.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

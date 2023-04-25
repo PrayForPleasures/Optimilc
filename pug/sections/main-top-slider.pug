@@ -1,0 +1,45 @@
+mixin main-top-slider
+    section.main-top-slider
+        .container
+            .main-top-slider__content            
+                .main-top-slider__list#slider-main 
+                    .swiper-wrapper
+                        .swiper-slide
+                            .main-top-slider__list-item
+                                h2.main-top-slider__list-head ОптиМилк - эксклюзивный дистрибьютер заквасок компании ALCE в Республике Беларусь
+                                
+                                .main-top-slider__list-info
+                                    p.main-top-slider__list-info-text Заквасочные культуры, производимые в соответствии с мировыми стандартами и богатым опытом лучших итальянских молочников
+                                    a.button.main-top-slider__list-info-btn(href="/zakvaski.html") Узнать больше
+                    
+                        .swiper-slide
+                            .main-top-slider__list-item
+                                h2.main-top-slider__list-head ОптиМилк - эксклюзивный дистрибьютер ферментов компании ALCE в Республике Беларусь
+                                
+                                .main-top-slider__list-info
+                                    p.main-top-slider__list-info-text Ферментные препараты, разработанные на стыке инновационных технологий и сыродельческих традиций Европы
+                                    a.button.main-top-slider__list-info-btn(href="/fermenty.html") Узнать больше
+                        
+                        .swiper-slide
+                            .main-top-slider__list-item
+                                h2.main-top-slider__list-head Широкий выбор фруктово-ягодных и овощных наполнителей от компании ОптиМилк
+                                
+                                .main-top-slider__list-info
+                                    p.main-top-slider__list-info-text Разрабатываем и производим начинки из натурального, экологически чистого и безопасного сырья любого вкуса и консистенции
+                                    a.button.main-top-slider__list-info-btn(href="/napolniteli.html") Узнать больше
+
+                .main-top-slider__images
+                    .main-top-slider__images-img.active(data-main-slider-image="zakvasochnyye-kultury")
+                        img.left-logos(src="/images/main-slider/zakvasochnyye-kultury/left-logos.svg" alt="zakvasochnyye-kultury-left-logos") 
+                        img.bottom-logo(src="/images/main-slider/zakvasochnyye-kultury/bottom-logo.svg" alt="zakvasochnyye-kultury-bottom-logo")
+                        img.img(src="/images/main-slider/zakvasochnyye-kultury/main.jpg" alt="заквасочные-культуры")
+
+                    .main-top-slider__images-img(data-main-slider-image="fermenty")
+                        img.left-logos(src="/images/main-slider/fermenty/left-logos.svg" alt="fermenty-left-logos") 
+                        img.bottom-logo(src="/images/main-slider/fermenty/bottom-logo.svg" alt="fermenty-bottom-logo")
+                        img.img(src="/images/main-slider/fermenty/main.jpg" alt="ферменты")
+
+                    .main-top-slider__images-img(data-main-slider-image="napolniteli")
+                        img.left-logos(src="/images/main-slider/napolniteli/left-logos.svg" alt="napolniteli-left-logos") 
+                        img.bottom-logo(src="/images/main-slider/napolniteli/bottom-logo.svg" alt="napolniteli-bottom-logo")
+                        img.img(src="/images/main-slider/napolniteli/main.jpg" alt="наполнители")

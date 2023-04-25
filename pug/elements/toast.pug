@@ -1,0 +1,7 @@
+mixin toast(text = "Заявка отправлена успешно", status = "success")
+    .toast(data-toast-id=status, class=status)
+        - if (status == "success")
+            .toast__icon
+                img.img(src='images/icon-check.svg' alt='icon-check')
+
+        p.toast__text=text

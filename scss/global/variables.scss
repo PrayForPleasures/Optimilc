@@ -1,0 +1,29 @@
+// Breakpoints
+$breakpoint-xxl: 1920px;
+$breakpoint-xl: 1366px;
+$breakpoint-lg: 1024px;
+$breakpoint-md: 768px;
+$breakpoint-sm: 576px;
+
+$main-font: "Prometo", sans-serif;
+
+// base colors
+$color-white: #ffffff;
+$color-white-F9: #f9f9f9;
+$color-gray: #404040;
+$color-gray-72: #6a7072;
+$color-gray-D9: #d9d9d9;
+$color-gray-E5: #e5e5e5;
+$color-light-blue: #eaf7ff;
+$color-blue: #348abb;
+$color-error: #ee3123;
+$background-blue-gradient: linear-gradient(
+    136.22deg,
+    #348abb -10.91%,
+    #009fe3 106.64%
+);
+
+// vars
+$color-main: $color-gray;
+
+// $font-famaly-second:"Prosto One", Open Sans, Arial, sans-serif;

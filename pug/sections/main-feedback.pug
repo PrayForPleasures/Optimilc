@@ -1,0 +1,53 @@
+mixin main-feedback
+    - var patternName ="^(?=.*[А-Яа-я])[А-Яа-я]+$";
+    - var patternPhone ="(\\+375|80)(29|25|44|33|17)[0-9]{7}";
+    - var patternEmail = "[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}";
+
+    section.main-feedback
+        .container
+            .main-feedback__text-connect обратная связь
+            .main-feedback__parts-flex
+
+                .main-feedback__text-part
+                    h4.main-feedback__topic Мы открыты к эффективному сотрудничеству!
+                    p.main-feedback__paragraph Оставьте свои контакты, и мы свяжемся с вами для обсуждения вашего вопроса или предложения
+
+                form.main-feedback__form-part(method="POST" data-consultation-form)
+                    input.main-feedback__input(
+                        name='header'
+                        type="hidden"
+                        value="Не задана"
+                    )
+                    label.main-feedback__wrap
+                        input.main-feedback__input(
+                            name='name'
+                            type="text"
+                            placeholder='Имя'
+                            data-validation-form=patternName
+                        )
+                        .main-feedback__error Имя может содержать только буквы на кириллице
+
+                    label.main-feedback__wrap
+                        input.main-feedback__input(
+                            name='phone'
+                            type="phone"
+                            placeholder='Телефон'
+                            data-validation-form=patternPhone
+                        )
+                        .main-feedback__error Неверный формат. Пример: +37525ХХХХХХХ
+
+                    label.main-feedback__wrap
+                        input.main-feedback__input(
+                            name='email'
+                            type="email"
+                            placeholder='Электронная почта'
+                            data-validation-form=patternEmail
+                        )
+                        .main-feedback__error Неверный формат. Пример: example@gmail.com
+
+                    input.main-feedback__checkbox#form-agreement(type="checkbox" data-validation-form)
+                    label.main-feedback__label-for-checkbox(for="form-agreement")
+                        img.main-feedback__img-for-checkbox(src="../../images/main-feedback/check-mark.svg", alt="mark")
+                        span.main-feedback__checkbox-text Я ознакомлен(-а) с #[a.main-feedback__checkbox-policy(href='/privacy-policy.html') политикой конфиденциальности]
+                    
+                    button.button.button-full-width(type="submit") Отправить

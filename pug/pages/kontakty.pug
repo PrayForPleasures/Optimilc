@@ -1,0 +1,82 @@
+extends ../template
+
+include ../sections/main-feedback
+
+
+block head
+    +head({
+        title: 'Контакты компании ОптиМилк',
+        description: 'Обратная связь и контактные данные ООО ОптиМилк в Минске, Беларусь',
+        keywords: 'молочные ферменты, ферменты, Молочные ферменты для сыра, Купить молочные ферменты, Молочные ферменты для творога, постоянный рост, развитие, оптимилк минск, молочная промышленность минск, оптимилк беларусь, оптимилк производитель компонентов молочной промышленности, Овощные наполнители для молочных продуктов'
+    })
+
+block header
+    +header('kontakty')
+
+block content
+    +breadcrumbs-app([{ url: '/', name: 'Главная' }, { name: 'Контакты' }])
+
+    .contacts-page
+        .contacts-page__bg
+            img.img-first(src="/images/backgrounds/bg-components.svg" alt="background components")
+            img.img-last(src="/images/backgrounds/bg-about-company.svg" alt="background about-company")
+
+        .container
+            .contacts-page__flex-box
+                
+                .contacts-page__box
+                    .contacts-page__minibox-topic
+                        h4.contacts-page__topic управляющий
+                        h4.contacts-page__topic (действует на основании устава)
+                    .contacts-page__minibox-paragraph
+                        p.contacts-page__paragraph Шербашова Марина Вадимовна
+                        a.contacts-page__paragraph.contacts-page__paragraph_link(href="tel:+375-29-310-47-84") +375(29)310-47-84
+                
+                .contacts-page__box
+                    .contacts-page__minibox-topic
+                        h4.contacts-page__topic главный бухгалтер
+                    .contacts-page__minibox-paragraph
+                        p.contacts-page__paragraph Путиенко Наталья Витальевна
+                        a.contacts-page__paragraph.contacts-page__paragraph_link(href="tel:+375-29-310-47-84") +375(29)310-47-84
+                
+                .contacts-page__box
+                    .contacts-page__minibox-topic
+                        h4.contacts-page__topic Инженер-технолог
+                    .contacts-page__minibox-paragraph
+                        p.contacts-page__paragraph Соколовская Людмила
+                        a.contacts-page__paragraph.contacts-page__paragraph_link(href="tel:+375-44-749-76-02") +375(44)749-76-02
+                        a.contacts-page__paragraph.contacts-page__paragraph_link(href="tel:+375-17-361-47-82") +375(17)361-47-82
+                        a.contacts-page__paragraph.contacts-page__paragraph_link(href="mailto:tehnolog@optimilk.by") tehnolog@optimilk.by
+                
+                .contacts-page__box
+                    .contacts-page__minibox-topic
+                        h4.contacts-page__topic Специалист по продаже наполнителей
+                    .contacts-page__minibox-paragraph
+                        p.contacts-page__paragraph Авсюк Ирина
+                        a.contacts-page__paragraph.contacts-page__paragraph_link(href="tel:+375-29-305-87-68") +375(29)305-87-68, 
+                        a.contacts-page__paragraph.contacts-page__paragraph_link(href="tel:+375-17-361-47-82") +375(17)361-47-82
+                        a.contacts-page__paragraph.contacts-page__paragraph_link(href="mailto:napolniteli@optimilk.by") napolniteli@optimilk.by
+                
+                .contacts-page__box
+                    .contacts-page__minibox-topic
+                        h4.contacts-page__topic наши реквизиты
+                    .contacts-page__minibox-paragraph
+                        .contacts-page__paragraph.contacts-page__paragraph-req Общество с ограниченной ответственностью «ОптиМилк»
+                            p.contacts-page__paragraph-req 223012, Республика  Беларусь, Минский район г.п. Мачулищи, ул. Связистов, 1А, изолированное помещение с инвентарным номером 600/D-19013 
+                            p.contacts-page__paragraph-req р/с BY69 PJCB 3012 0200 5310 0000 0933 в ОАО «Приорбанк» ЦБУ 113, БИК PJCBBY2X
+                            p.contacts-page__paragraph-req МФО 153001749,  г.  Минск, ул. Комсомольская, 13
+                            p.contacts-page__paragraph-req УНП 69136572  ОКПО 299281546000
+                
+                .contacts-page__box
+                    .contacts-page__minibox-topic
+                        h4.contacts-page__topic адрес для корреспонденции
+                    .contacts-page__minibox-paragraph
+                        p.contacts-page__paragraph 220045, г.Минск, пр-т Держинского,  131, оф.620
+                
+                .contacts-page__box.contacts-page__box_margin
+                    .contacts-page__minibox-topic
+                        h4.contacts-page__topic наше местоположение
+                    .contacts-page__minibox-paragraph
+                        .contacts-page__map
+                            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3a85e04a24501c621c1c4b6426a17d337150a68f14a3368db878c7d9329eaaf0&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script>
+    +main-feedback

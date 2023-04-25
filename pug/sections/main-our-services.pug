@@ -1,0 +1,32 @@
+mixin main-our-services
+    - 
+        var list = [
+            {
+                head: 'Разработка и освоение новых технологий',
+                desc: 'Помощь в разработке и освоении новых технологий производства молочных продуктов',
+            },
+            {
+                head: 'Разработка и актуализация документации (ТУ, ТИ, РЦ)',
+                desc: 'Разработка и актуализация технологической документации (ТД): технические условия на продукцию (ТУ), технологические инструкции (ТИ) и рецептуры (РЦ)',
+            },
+            {
+                head: 'Декларирование ингредиентов, упаковки для молочной промышленности',
+                desc: 'Декларирование и проведение испытаний (предоставление протоколов) на используемые в производстве ингредиенты (компоненты)',
+            },
+        ];
+
+    section.main-our-services
+        .container
+            .main-our-services__header 
+                h3.main-our-services__header-category наши услуги
+                h4.main-our-services__header-name Предоставляем перечень услуг по разработке технологий, документации, декларированию
+
+            .main-our-services__content 
+                .main-our-services__content-list 
+                    each item, index in list
+                        .main-our-services__content-item
+                            .main-our-services__content-wrap
+                                h5.main-our-services__content-item-head=item.head 
+                                p.main-our-services__content-item-desc=item.desc
+                                button.button.button-full-width.main-our-services__content-item-btn(data-open-modal="modal-service-request" data-modal-change-value=item.head)
+                                    | Оставить заявку

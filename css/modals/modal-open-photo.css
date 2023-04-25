@@ -1,0 +1,6 @@
+.modal-open-photo__img {
+  width: 100vw;
+  height: 100vh;
+  -o-object-fit: contain;
+     object-fit: contain;
+}

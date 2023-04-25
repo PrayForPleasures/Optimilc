@@ -1,0 +1,43 @@
+mixin header(selectedLink = '')
+    header.header
+        .container
+            .header__content
+                a.header__logo(href='/')
+                    img.header__logo-img(src='/images/horizontal-logo.png')
+
+                .header__mobile-menu#toggle-mobile-menu
+                    img.icon(src="/images/header/burger-menu.svg", alt="burger-menu")
+
+                nav.header__nav
+                    ul.header__nav-list
+                        li.header__nav-list-item
+                            a.header__nav-list-link(href="/" class=selectedLink == 'home' ? 'selected' : '') Главная
+
+                        li.header__nav-list-item
+                            a.header__nav-list-link(href="/o-kompanii.html" class=selectedLink == 'o-kompanii' ? 'selected' : '') О компании
+
+                        li.header__nav-list-item
+                            a.header__nav-list-link(href='/komponenty.html' class=selectedLink == 'komponenty' ? 'selected' : '') Компоненты
+                            
+                            .header__nav-list-arrow(data-toggle-menu="components")
+                                svg.img(role="img" aria-hidden="true")
+                                    use(href="#svg-icon-arrow-down")
+
+                            ul.header__nav-sublist
+                                li.header__nav-sublist-item
+                                    a.header__nav-sublist-link(href='/zakvaski.html' class=selectedLink == 'zakvaski' ? 'selected' : '') Закваски
+
+                                li.header__nav-sublist-item
+                                    a.header__nav-sublist-link(href='/fermenty.html' class=selectedLink == 'fermenty' ? 'selected' : '') Ферменты
+
+                                li.header__nav-sublist-item
+                                    a.header__nav-sublist-link(href='/napolniteli.html' class=selectedLink == 'napolniteli' ? 'selected' : '') Наполнители
+
+                        li.header__nav-list-item
+                            a.header__nav-list-link(href='/uslugi.html') Услуги
+
+                        li.header__nav-list-item
+                            a.header__nav-list-link(href="/novosti.html" class=selectedLink == 'novosti' ? 'selected' : '') Новости
+
+                        li.header__nav-list-item
+                            a.header__nav-list-link(href="/kontakty.html" class=selectedLink == 'kontakty' ? 'selected' : '') Контакты

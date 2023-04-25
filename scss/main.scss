@@ -1,0 +1,45 @@
+// plugins
+@import "https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css";
+
+// global
+@import "global/variables.scss";
+@import "global/fonts.scss";
+@import "global/normalize.scss";
+@import "global/global.scss";
+@import "global/mixin.scss";
+
+// partials
+@import "partials/footer.scss";
+@import "partials/header.scss";
+
+// elements
+@import "elements/toast.scss";
+@import "elements/breadcrumbs-app.scss";
+@import "elements/buttons.scss";
+
+// modals
+@import "modals/modal.scss";
+@import "modals/modal-service-request.scss";
+@import "modals/modal-open-photo.scss";
+
+
+// sections
+@import "sections/main-components.scss";
+@import "sections/main-top-slider.scss";
+@import "sections/main-our-services.scss";
+@import "sections/main-our-clients.scss";
+@import "sections/main-feedback.scss";
+@import "sections/main-news.scss";
+@import "sections/main-about-company.scss";
+
+// pages
+@import "pages/error-page.scss";
+@import "pages/fillers-page.scss";
+@import "pages/about-company-page.scss";
+@import "pages/services-page.scss";
+@import "pages/news-page.scss";
+@import "pages/news-list-page.scss";
+@import "pages/components-page.scss";
+@import "pages/component-page.scss";
+@import "pages/privacy-policy-page.scss";
+@import "pages/contacts-page.scss";

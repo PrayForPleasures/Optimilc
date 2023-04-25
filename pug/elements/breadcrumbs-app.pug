@@ -1,0 +1,19 @@
+mixin breadcrumbs-app(breadcrumbs)
+    if (breadcrumbs && breadcrumbs.length > 0)
+        .breadcrumbs-app
+            .container
+                .breadcrumbs-app__list
+                    each item, i in breadcrumbs
+                        .breadcrumbs-app__item
+                            if (i !== 0)
+                                .breadcrumbs-app__icon
+                                    svg.svg(role="img" aria-hidden="true")
+                                        use(href="#svg-icon-arrow-down")
+
+                            if (i !== breadcrumbs.length - 1)
+                                a.breadcrumbs-app__link(href=item.url)
+                                    span.breadcrumbs-app__link-text=item.name
+                            else
+                                .breadcrumbs-app__link
+                                    span.breadcrumbs-app__link-text=item.name
+                        

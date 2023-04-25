@@ -1,0 +1,46 @@
+extends ../template
+
+include ../sections/main-our-clients
+include ../sections/main-about-company
+include ../modals/modal-open-photo
+
+
+
+block head
+    +head({
+        title: 'ОптиМилк - ваш надёжный поставщик инновационных решений в молочной сфере',
+        description: 'Компания ОптиМилк специализируется на производстве и реализации компонентов для молочной промышленности, разработке новых технологий, технической документации, декларировании и проведении испытаний ингредиентов молочной продукции',
+        keywords: 'Фруктово-ягодные наполнители оптом, Купить фруктово-ягодные наполнители для молочных продуктов в интернет-магазине, Фруктово-ягодные наполнители для производства молочной продукции, Овощные наполнители для молочной промышленности, Купить вкусовые наполнители для молочных продуктов, Фруктово-ягодные наполнители для кефира, Вкусовые наполнители для йогурта, Фруктово-ягодные наполнители для творога, инновации'
+    })
+
+block header
+    +header('o-kompanii')
+
+block content
+    +breadcrumbs-app([{ url: '/', name: 'Главная' }, { name: 'О компании' }])
+
+    .about-company-page
+        +main-about-company
+        +main-our-clients
+
+        section.about-company-certificates
+            .container
+                .about-company-certificates__content
+                    .about-company-certificates__text_flex
+                        h4.about-company-certificates__text-topic сертификаты
+                        p.about-company-certificates__text-description Работаем с сертифицированными производителями и изготовителями
+
+                .about-company-certificates__images-all
+                    .about-company-certificates__img_flex
+                        img.about-company-certificates__img(src='/images/certificate/certificate1.jpg' alt='certificates__img_flex' data-open-modal="modal-open-photo" data-modal-change-img="/images/certificate/certificate1.jpg")
+                        p.about-company-certificates__description  ALCE International SRL, Италия
+                    
+                    .about-company-certificates__img_flex
+                        img.about-company-certificates__img(src='/images/certificate/certificate2.jpg' alt='certificates__img_flex' data-open-modal="modal-open-photo" data-modal-change-img="/images/certificate/certificate2.jpg")
+                        p.about-company-certificates__description  ALCE International SRL, Италия
+                    
+                    .about-company-certificates__img_flex
+                        img.about-company-certificates__img(src='/images/certificate/certificate3.jpg' alt='certificates__img_flex' data-open-modal="modal-open-photo" data-modal-change-img="/images/certificate/certificate3.jpg")
+                        p.about-company-certificates__description  СООО “Ароматик”, Беларусь
+
+        +modal-open-photo

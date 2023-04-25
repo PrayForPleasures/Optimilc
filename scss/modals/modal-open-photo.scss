@@ -1,0 +1,16 @@
+.modal-open-photo {
+
+    .modal__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__img {
+        width: max-content;
+        height: max-content;
+        max-width: 99vw;
+        max-height: 99vh;
+        object-fit: contain;
+    }
+}

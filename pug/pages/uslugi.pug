@@ -1,0 +1,29 @@
+extends ../template
+
+include ../sections/main-our-services
+include ../sections/main-feedback
+
+include ../modals/modal-service-request
+
+
+block head
+    +head({
+        title: 'Заказать услуги по разработке технологий, документации, декларированию молочных компонентов',
+        description: 'Разработка и освоение новых технологий, разработка и актуализация документации (ТУ, ТИ, РЦ), декларирование ингредиентов, упаковки для молочной промышленности',
+        keywords: 'Молочная закваска для кефира, Молочная закваска для ряженки, Молочная закваска для сыра, Купить молочную закваску онлайн, отечественные стандарты качества молочной продукции, производители молочной продукции, новые технологии молочной промышленности, молочные компоненты, документация на молочную продукцию, молочная продукция с итальянскими компонентами'
+    })
+
+block header
+    +header('uslugi')
+
+block content
+    +breadcrumbs-app([{ url: '/', name: 'Главная' }, { name: 'Услуги' }])
+
+    .services-page
+        .services-page__bg
+            img.img(src="/images/backgrounds/bg-components.svg" alt="background components")
+
+        +main-our-services
+        +main-feedback
+
+    +modal-service-request

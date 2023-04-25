@@ -1,0 +1,87 @@
+extends ../template
+
+include ../sections/main-feedback
+
+block head
+    +head({
+        title: 'Ферментные препараты для изготовления молочных и кисломолочных продуктов',
+        description: 'Ферментные препараты от компании-дистрибьютора ОптиМилк,  разработанные на стыке инновационных технологий и сыродельческих традиций компании-производителя Alce',
+        keywords: 'Молочная продукция, молочное производство в Беларуси, Производство молочных продуктов, Итальянские технологии, Европейское качество, Ингредиенты для молочных продуктов, Поставки молочных компонентов, молочная промышленность в Беларуси, Экспертиза компонентов молочной продукции, Купить фруктово-ягодные наполнители для молочных продуктов'
+    })
+
+block header
+    +header('fermenty')
+
+block content
+    +breadcrumbs-app([{ url: '/', name: 'Главная' }, { url: '/komponenty.html', name: 'Компоненты' }, { name: 'Ферменты' }])
+
+    .component-page
+        img.component-page__bg(src="/images/backgrounds/bg-components.svg" alt="background components")
+        .container
+            .component-page__header 
+                h3.component-page__header-category ферменты
+                h4.component-page__header-name Ферментные препараты для изготовления молочных и кисломолочных продуктов
+
+            .component-page__content
+                .component-page__desc 
+                    .component-page__desc-img 
+                        img.img(src="/images/component-page/logo-ALCE.png" alt="logo-ALCE")
+
+                    .component-page__desc-text
+                        p.text Молокосвертывающий фермент играет ключевую роль в производстве сыров. Качество и тип молокосвертывающего фермента зависят от многих факторов, которые влияют на выход сыра и развертывание вкусового букета во время созревания. Компания Алче предлагает к поставкам как натуральный сычужный фермент, который производится без консервантов и маркирован знаком «NB» (no benzoate). Также в ассортименте представлен микробный молокосвертывающий фермент. 
+                        p.text Важную роль при производстве сыра играет внесение фермента Лизоцим, который обеспечивает созревание и хранимоспособность сыра и останавливает развитей маслянокислых и других нежелательных бактерий, при этом не подавляя заквасочную микрофлору. В ассортименте Алче есть как жидкий вариант фермента Лизоцим, так и сухой гранулированный фермент отличающиеся высокой активностью, экономичностью расхода и удобством при транспортировке и хранении.
+
+        .component-page__table-wrap     
+            table.component-page__table 
+                thead.component-page__table-head 
+                    th  Наименование закваски/
+                        br
+                        | продукта
+                    th Состав
+                    th Продукт и область 
+                        br
+                        | применения
+
+                tbody 
+                    tr 
+                        td 
+                            p.component-page__table-text Ферментный препарат микробного происхождения молокосвертывающий #[strong MICROREN 750TL] Молокосвертывающая активность - 750 IMCU/ мл
+                        td 
+                            p.component-page__table-text Миробиальный молокосвертывающий фермент
+                        td 
+                            p.component-page__table-text Для производства сыров
+
+                    tr 
+                        td 
+                            p.component-page__table-text Ферментный сычужный препарат животного происхождения молокосвертывающий #[strong Сaglio di Vitello Naturale] 
+                                br
+                                | Молокосвертывающая активность - 221 IMCU/ мл 
+                        td 
+                            p.component-page__table-text Сычужный молокосвертывающий фермента состав Химозин/Пепсин -80/20
+                        td 
+                            p.component-page__table-text Для производства сыров и творога кислотно-сычужным способом
+
+                    tr 
+                        td 
+                            p.component-page__table-text Ферментный препарат животного происхождения лизоцим #[strong Lisozima Liquido] Активность ≥ 9 000 000 FIP ед/мл.
+                        td 
+                            p.component-page__table-text Жидкий лизоцим
+                        td 
+                            p.component-page__table-text Для сыров с целью подавления развития посторонней микрофлоры в ходе их созревания
+
+
+                    tr 
+                        td 
+                            p.component-page__table-text Ферментный препарат животного происхождения лизоцим #[strong LISOZIMA CLORIDRATO LISOGRANA GRANULAR] Активность ≥ 450 000 FIP ед/мг белка 
+                        td 
+                            p.component-page__table-text Сухой лизоцим
+                        td 
+                            p.component-page__table-text Для сыров с целью подавления развития посторонней микрофлоры в ходе их созревания
+
+        .container
+            .component-page__info 
+                img.component-page__info-icon(src="images/icon-info-circle.svg" alt="icon-info-circle")
+                p.component-page__info-text Компания ОптиМилк может предоставить необходимое количество образца фермента для отработки в промышленных условиях.
+
+
+    +main-feedback

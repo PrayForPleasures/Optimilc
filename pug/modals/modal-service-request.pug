@@ -1,0 +1,54 @@
+mixin modal-service-request
+    - var patternName ="^(?=.*[А-Яа-я])[А-Яа-я]+$";
+    - var patternPhone ="(\\+375|80)(29|25|44|33|17)[0-9]{7}";
+    - var patternEmail = "[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}";
+
+    .modal.modal-service-request(data-modal-name="modal-service-request")
+        .modal__black-region(data-close-modal)
+        .modal__content
+            h4.modal-service-request__head Заявка на услугу
+            h5.modal-service-request__desc(data-change-value-in-modal) Разработка и актуализация документации (ТУ, ТИ, РЦ)
+            
+            .modal__cross(data-close-modal)
+                img.img(src="images/cross.svg" alt="cross")
+
+            form.main-feedback__form-part(method="POST" data-consultation-form)
+                input.main-feedback__input(
+                    name='header'
+                    type="hidden"
+                    data-change-value-in-modal
+                )
+                label.main-feedback__wrap
+                    input.main-feedback__input(
+                        name='name'
+                        type="text"
+                        placeholder='Имя'
+                        data-validation-form=patternName
+                    )
+                    .main-feedback__error Имя может содержать только буквы на кириллице
+
+                label.main-feedback__wrap
+                    input.main-feedback__input(
+                        name="phone"
+                        type="phone"
+                        placeholder='Телефон'
+                        data-validation-form=patternPhone
+                    )
+                    .main-feedback__error Неверный формат. Пример: +37525ХХХХХХХ
+
+                label.main-feedback__wrap
+                    input.main-feedback__input(
+                        name='email'
+                        type="email"
+                        placeholder='Электронная почта'
+                        data-validation-form=patternEmail
+                    )
+                    .main-feedback__error Неверный формат. Пример: example@gmail.com
+
+                .main-feedback__wrap
+                    input.main-feedback__checkbox#form-agreement-modal(type="checkbox" data-validation-form)
+                    label.main-feedback__label-for-checkbox(for="form-agreement-modal")
+                        img.main-feedback__img-for-checkbox(src="../../images/main-feedback/check-mark.svg", alt="mark")
+                        p.main-feedback__checkbox-text Я ознакомлен(-а) с &nbsp; #[a.main-feedback__checkbox-policy(href='/privacy-policy.html') политикой конфиденциальности]
+                
+                button.button.button-full-width(type="submit") Отправить

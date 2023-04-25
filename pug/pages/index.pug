@@ -1,0 +1,34 @@
+extends ../template
+
+include ../sections/main-top-slider
+include ../sections/main-components
+include ../sections/main-about-company
+include ../sections/main-our-services
+include ../sections/main-news
+include ../sections/main-our-clients
+include ../sections/main-feedback
+
+include ../modals/modal-service-request
+
+
+block head
+    +head({
+        title: 'Заказать закваски, ферменты и наполнители для молочной промышленности в Минске | ОптиМилк',
+        description: 'ОптиМилк - эксклюзивный дистрибьютер ферментов и заквасок компании ALCE в Республике Беларусь, надёжный производитель фруктово-ягодных и овощных наполнителей для молочной продукции в Минске',
+        keywords: 'Молочные ферменты оптом, Молочные ферменты купить в интернет-магазине, Молочные ферменты для производства молочной продукции, Молочные ферменты для промышленности, Молочные ферменты купить в Беларуси, оптимилк, оптимилк минск, оптимилк беларусь, молочные ингредиенты оптимилк, фруктово-ягодные наполнители'
+    })
+
+block header
+    +header('home')
+
+block content
+    .home-page
+        +main-top-slider
+        +main-components
+        +main-about-company
+        +main-our-services
+        +main-news
+        +main-our-clients
+        +main-feedback
+
+    +modal-service-request

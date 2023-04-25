@@ -1,0 +1,37 @@
+include elements/toast
+include elements/breadcrumbs-app
+
+include partials/head
+include partials/header
+include partials/footer
+include partials/svg
+
+
+doctype html
+html(lang="ru")
+    block head
+        +head
+
+    body
+        block header
+            +header
+
+        .main-content#main-content
+            block content
+
+        block footer
+            +footer
+
+        block toasts
+            +toast("Заявка отправлена успешно", "success")
+            +toast("Ошибка отправки формы", "error")
+
+        //- global components
+        +svg
+
+        //- scripts
+        block vendors
+            script(src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js") 
+        block scripts
+            script(src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js")
+            script(src="js/main-dist.js")

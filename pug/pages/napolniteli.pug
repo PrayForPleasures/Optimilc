@@ -1,0 +1,64 @@
+extends ../template
+
+include ../sections/main-feedback
+
+
+block head
+    +head({
+        title: 'Фруктово-ягодные, овощные и вкусовые наполнители для молочных продуктов',
+        description: 'Широкий выбор начинок для молочных продуктов из натурального, экологически чистого и безопасного сырья любого вкуса и консистенции в Минске',
+        keywords: 'Сертификация компонентов молочной продукции, Инновации в молочной промышленности Беларуси, Продажа и поставка молочных компонентов, закваски alce в беларуси, ферменты  alce в беларуси, молочные закваски итальянского качества, молочные ферменты европейского производителя, фруктово-ягодные наполнители для молочных продуктов'
+    })
+
+block header
+    +header('napolniteli')
+
+block content
+    +breadcrumbs-app([{ url: '/', name: 'Главная' }, { url: '/komponenty.html', name: 'Компоненты' }, { name: 'Наполнители' }])
+
+    .fillers-page
+        section.fillers
+            img.fillers__bg(src="/images/backgrounds/bg-components.svg" alt="background components")
+            .container
+                .fillers__parts-flex
+                    h1.fillers__text-topic наполнители
+
+                    .fillers__main-part
+                        h2.fillers__text-specification Фруктово-ягодные, овощные и вкусовые наполнители для молочных продуктов от компании ОптиМилк
+
+                        .fillers__description
+                            img.fillers__img.fillers__img_sizes-aroma(src='../../images/napolniteli/aromatik.png')
+                            p.fillers__img-description Наполнители производства ООО «ОптиМилк» изготавливаются для молочных продуктов по современным технологиям и только из высококачественного сырья.  Упаковываются в асептическую упаковку: мешки многослойные асептические в ящиках из гофрокартона (упаковка «bag in box»); контейнеры асептические. Все это позволяет получать продукт, соответствующий стандартам безопасности и качества. Срок годности наполнителей составляет 12 месяцев. Наполнители для молочных продуктов используются для улучшения вкуса и внешнего вида (при этом уходит необходимость добавления в продукцию ароматизаторов и красителей), разнообразия ассортиментного перечня, а также увеличения пищевой ценности продуктов.
+
+                        .fillers__description
+                            p.fillers__img-description.fillers__img-description_margin Мы предлагаем огромный ассортимент наполнителей. Это  как традиционные однокомпонентные вкусы – земляника, малина, черника, клубника, вишня, персик и ананас, так и  многокомпонентные -  гранат-малина, клюква-земляника, персик-маракуйя, ананас-манго, малина-злаки, черника-мюсли, груша-мед-злаки, яблоко-изюм-овсяные хлопья и т.д.
+                            img.fillers__img.fillers__img_sizes-bag-in-box(src='../../images/napolniteli/bag-in-box.jpg')
+
+                        .fillers__description
+                            img.fillers__img.fillers__img_sizes-berries(src='../../images/napolniteli/berries.jpg')
+                            .fillers__description-box
+                                p.fillers__img-description По консистенции различают:
+                                p.fillers__img-description - Гетерогенные наполнители - в виде кусочков необходимого размера или целых фрагментов.
+                                p.fillers__img-description - Гомогенные наполнители – в виде протертой массы заложенных компонентов.
+                                p.fillers__img-description По виду закладки в продуктах наполнители подразделяются:
+                                p.fillers__img-description - для вымешивания в продукте
+                                p.fillers__img-description - послойная закладка (на дне продукта либо верхним слоем)
+                                p.fillers__img-description -  в двухкамерном стаканчике
+                                p.fillers__img-description в виде стержня внутри продукта
+                        p.fillers__img-description ООО «ОптиМилк» всегда тесно сотрудничает со своими клиентами. Разрабатывает для каждого из них свои вкусы наполнителей, исходя из тенденций рынка и потребностей покупателей. Возможна разработка любого вида наполнителя с заданными свойствами под запрос клиента.
+
+                        .fillers__catalog_flex
+                            .fillers__download Скачайте #[a.fillers__download-ref(href='../../catalog/catalog.pdf' download) каталог] , чтобы подробно ознакомиться с перечнем наполнителей от компании ОптиМилк
+                            a.fillers__view-catalog(href='/catalog/catalog.pdf' target='_blank')
+                                img(src="../../images/napolniteli/pdf-icon.svg", alt="icon")
+                                p.fillers__view-catalog-text Ознакомиться с каталогом
+
+        +main-feedback
+
+
+
+
+
+
+
+

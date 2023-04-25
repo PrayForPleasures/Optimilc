@@ -1,0 +1,41 @@
+mixin footer(fill = false)
+    footer.footer(class=fill ? 'fill' : '')
+        img.footer__bg(src="/images/backgrounds/bg-footer.svg")
+        .container
+            .footer__content
+                .footer__content-logo
+                    img.img(src='images/vertical-logo.png', alt='logo')
+
+                .footer__content-wrap
+                    .footer__content-list
+                        .footer__content-list-item
+                            p.text &#169;2023. ООО «ОптиМилк»
+
+                        .footer__content-list-item
+                            a.link(href='/privacy-policy.html') Политика конфиденциальности
+
+                        .footer__content-list-item
+                            a.link(href="https://kwork.ru/user/yevheniyasavchuk") Разработка сайта
+
+                    .footer__content-list
+                        .footer__content-list-item
+                            a.link(href="tel:+375-29-310-47-84") тел. +375(29)310-47-84
+
+                        .footer__content-list-item
+                            a.link(href="tel:+375-17-361-47-82") факс +375(17)361-47-82
+
+                        .footer__content-list-item
+                            a.link(href="tel:+375-17-504-60-35") склад +375(17)504-60-35
+
+                        .footer__content-list-item
+                            a.link(href="mailto:optimilk@tut.by") optimilk@tut.by
+
+                    .footer__content-list
+                        .footer__content-list-item
+                            p.text 223012, Республика Беларусь,
+
+                        .footer__content-list-item
+                            p.text Минский район, г.п. Мачулищи,
+
+                        .footer__content-list-item
+                            p.text ул. Связистов, 1А.

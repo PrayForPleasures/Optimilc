@@ -1,0 +1,72 @@
+.privacy-policy-page {
+    background-color: $color-white;
+    padding-top: 64px;
+
+    @media (max-width: $breakpoint-lg) {
+        padding-top: 40px;
+    }
+
+    &_flex {
+        display: flex;
+    }
+
+    &__empty-place {
+        width: 326px;
+
+        @media (max-width: $breakpoint-xl) {
+            width: 338px;
+        }
+        @media (max-width: $breakpoint-lg) {
+            width: 0;
+        }
+    }
+
+    &__box {
+        width: 100%;
+    }
+
+    &__topic {
+        font-size: 36px;
+        line-height: 140%;
+        text-transform: uppercase;
+
+        @media (max-width: $breakpoint-xl) {
+            font-size: 30px;
+        }
+        @media (max-width: $breakpoint-lg) {
+            font-size: 24px;
+        }
+    }
+
+    &__description {
+        margin-top: 32px;
+        font-size: 18px;
+        line-height: 150%;
+        font-family: $main-font;
+        color: $color-gray;
+    }
+
+    &__sub-topic {
+        font-size: 24px;
+        line-height: 140%;
+        font-family: $main-font;
+        color: $color-gray;
+        margin-top: 32px;
+    }
+
+    &__description-span {
+        display: block;
+        font-size: 18px;
+        line-height: 150%;
+        font-family: $main-font;
+        color: $color-gray;
+    }
+
+    &__link {
+        transition: 0.3s opacity linear;
+    }
+
+    &__link:hover {
+        opacity: 0.75;
+    }
+}

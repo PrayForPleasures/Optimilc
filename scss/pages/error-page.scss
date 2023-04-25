@@ -1,0 +1,108 @@
+.error-page {
+    position: relative;
+
+    &__wrap-bg {
+        position: relative;
+        z-index: -1;
+        user-select: none;
+        // width: 2696px;
+        height: 583px;
+
+        @media(max-width: $breakpoint-lg) {
+            height: 517px;
+        }
+        @media(max-width: $breakpoint-md) {
+            height: 302px;
+        }
+    }
+
+    &__bg {
+        position: absolute;
+        top: -155px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 2696px;
+        height: 100%;
+
+        @media(max-width: $breakpoint-xl) {
+            
+        }
+        @media(max-width: $breakpoint-lg) {
+            top: -155px;
+        }
+        @media(max-width: $breakpoint-md) {
+            top: -100px;
+        }
+    }
+
+    &__bg-elem {
+        position: absolute;
+        top: 240px;
+        left: 50%;
+        transform: translateX(-50%);
+
+
+        @media(max-width: $breakpoint-xl) {
+            
+        }
+        @media(max-width: $breakpoint-lg) {
+            width: 427px;
+            top: 220px;
+        }
+        @media(max-width: $breakpoint-md) {
+            width: 295px;
+            top: 100px;
+        }
+    }
+
+    &__wrap-content {
+        position: relative;
+        background-color: #fff;
+        padding-top: 180px;
+
+
+        @media(max-width: $breakpoint-xl) {
+            padding-top: 140px;
+        }
+        @media(max-width: $breakpoint-lg) {
+            padding-top: 100px;
+        }
+        @media(max-width: $breakpoint-md) {
+            padding-top: 48px;
+        }
+    }
+
+    &__content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        max-width: 745px;
+        margin: 0 auto;
+    }
+
+    &__head {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 140%;
+        margin-bottom: 40px;
+
+        @media(max-width: $breakpoint-lg){
+            font-size: 32px;
+        }
+    }
+
+    &__desc {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 140%;
+        margin-bottom: 48px;
+        max-width: 525px;
+    }
+
+    &__btn {
+
+    }
+}

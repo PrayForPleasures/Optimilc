@@ -1,0 +1,273 @@
+extends ../template
+
+include ../sections/main-feedback
+
+block head
+    +head({
+        title: 'Заквасочные культуры для производства молочных и кисломолочных продуктов в РБ',
+        description: 'Заквасочные культуры от компании-дистрибьютора ОптиМилк, производимые в соответствии с мировыми стандартами и богатым опытом лучших итальянских молочников компании-производителя Alce',
+        keywords: 'молочная закваска, закваска для йогурта, закваска для творога, Молочная закваска купить, компоненты молочной промышленности, документация на молочную продукцию, испытания ингредиентов молочной промышленности, белорусская молочная промышленность, молочные ингредиенты, европейские стандарты качества молочной продукции'
+    })
+
+block header
+    +header('zakvaski')
+
+
+block content
+    +breadcrumbs-app([{ url: '/', name: 'Главная' }, { url: '/komponenty.html', name: 'Компоненты' }, { name: 'Закваски' }])
+
+    .component-page
+        img.component-page__bg(src="/images/backgrounds/bg-components.svg" alt="background components")
+        .container
+            .component-page__header 
+                h3.component-page__header-category закваски
+                h4.component-page__header-name Заквасочные культуры для производства молочных и кисломолочных продуктов
+
+            .component-page__content
+                .component-page__desc 
+                    .component-page__desc-img 
+                        img.img(src="/images/component-page/logo-ALCE.png" alt="logo-ALCE")
+
+                    .component-page__desc-text
+                        p.text Закваски — это тип бактериальной культуры, которая используется для запуска процесса ферментации при производстве молочных продуктов и сыров. Сильные и слабые стороны заквасок зависят от видового штаммового состава и их назначения: мезофильные, термофильные, мезофильно-термофильные и вспомогательные.
+                        p.text Закваски прямого внесения LYOBAC-D представляют собой лиофилизированные высококонцентрированные культуры молочнокислых бактерий. Не требуют предварительной активации, отсутствует постокисление («стоп-эффект»), имеют фагоальтернативный ряд (ротация), широкий ассортимент упаковок (расчёт на 500-10000л. ферментируемой смеси), длительное хранение (2 года при -18 °С).
+
+        .component-page__table-wrap     
+            table.component-page__table 
+                thead.component-page__table-head 
+                    th  Наименование закваски/
+                        br
+                        | продукта
+                    th Состав
+                    th Продукт и область 
+                        br
+                        | применения
+
+            table.component-page__table.category 
+                tr 
+                    td Пробиотические культуры
+
+            table.component-page__table 
+                tr 
+                    td 
+                        p.component-page__table-text LYOBAC-D Bifidobacterium bifidum
+                    td 
+                        p.component-page__table-text Культура бифидобактерий
+                    td 
+                        p.component-page__table-text Молочные биопродукты
+
+            table.component-page__table.category 
+                tr 
+                    td Закваски прямого внесения для КМП продуктов
+
+            table.component-page__table
+                tr 
+                    td 
+                        p.component-page__table-text LYOBAC-D YOYO 28Q 
+                            br
+                            | LYOBAC-D YOYO 82Q 
+                            br
+                            | LYOBAC-D YOYO 110Q
+                    td 
+                        p.component-page__table-text Смесь культур термофильного стрептококка и болгарской палочки
+                    td 
+                        p.component-page__table-text Йогурт, йогуртный продукт, кисломолочные напитки
+
+                tr 
+                    td 
+                        p.component-page__table-text LYOBAC-D YO-MAX 100
+                    td 
+                        p.component-page__table-text Смесь культур термофильного стрептококка и болгарской палочки
+                    td 
+                        p.component-page__table-text Йогрут с высокой вязкостью
+
+
+                tr 
+                    td 
+                        p.component-page__table-text LYOBAC-D SM 10/12
+                    td 
+                        p.component-page__table-text Смесь термофильных и мезофильных штаммов
+                    td 
+                        p.component-page__table-text Сметана низкой и средней жирности
+
+                tr 
+                    td 
+                        p.component-page__table-text LYOBAC-D MCL 24/56
+                    td 
+                        p.component-page__table-text Смесь мезофильных штаммов
+                    td 
+                        p.component-page__table-text Сметана средней и высокой жирности, а также творог и творожные продукты
+
+                tr 
+                    td 
+                        p.component-page__table-text LYOBAC-D ST 32/35
+                    td 
+                        p.component-page__table-text Термофильная культура
+                    td 
+                        p.component-page__table-text Ряженка, простокваша, кисломолочные напитки
+
+            table.component-page__table.category 
+                tr 
+                    td Закваски прямого внесения для творога
+
+            table.component-page__table
+                tr 
+                    td 
+                        p.component-page__table-text LYOBAC-D TW 1/2
+                    td 
+                        p.component-page__table-text Смесь мезофильных штаммов
+                    td 
+                        p.component-page__table-text Творожный сыр, клинковый сыр, творог и творожные продукты
+
+                tr 
+                    td 
+                        p.component-page__table-text LYOBAC-D MC 1/2/3
+                    td 
+                        p.component-page__table-text Смесь мезофильных штаммов
+                    td 
+                        p.component-page__table-text Творог и творожные продукты
+
+
+                tr 
+                    td 
+                        p.component-page__table-text LYOBAC-D STМ 370/480
+                    td 
+                        p.component-page__table-text Смесь термофильных и мезофильных штаммов
+                    td 
+                        p.component-page__table-text Творожный сыр, творог ускоренным способом, творожыне продукты
+
+                tr 
+                    td 
+                        p.component-page__table-text LYOBAC-D NT 1/2
+                    td 
+                        p.component-page__table-text Смесь мезофильных штаммов без газообразующей способности
+                    td 
+                        p.component-page__table-text Творожный сыр, творог и творожные продукты, также для сыра Фета
+            
+            table.component-page__table.category 
+                tr 
+                    td Закваски прямого внесения для сыра
+
+            table.component-page__table
+                tr 
+                    td 
+                        p.component-page__table-text LYOBAC-D OTC 5/6
+                    td 
+                        p.component-page__table-text Смесь мезотермофильных штаммов
+                    td 
+                        p.component-page__table-text Голландская группа сыров, в т.ч. Маасдам
+
+                tr 
+                    td 
+                        p.component-page__table-text LYOBAC-D FD 1/2
+                    td 
+                        p.component-page__table-text Смесь мезофильных культур
+                    td 
+                        p.component-page__table-text Российская группа сыров с низкой температурой 2-ого нагревания
+
+
+                tr 
+                    td 
+                        p.component-page__table-text LYOBAC-D TH BR 084/085/086/087
+                    td 
+                        p.component-page__table-text Термофильная культура с ароматоразующими шатммами
+                    td 
+                        p.component-page__table-text Выдержанные сыры типа Пармезан и Грана Падано
+
+                tr 
+                    td 
+                        p.component-page__table-text LYOBAC-D MO3D 084/085/086/087
+                    td 
+                        p.component-page__table-text Термофильная культура
+                    td 
+                        p.component-page__table-text Для сыра Мацарелла и Сулугуни
+
+                tr 
+                    td 
+                        p.component-page__table-text LYOBAC-D MO 084/085/086/087
+                    td 
+                        p.component-page__table-text Термофильная культура
+                    td 
+                        p.component-page__table-text Для сыра Буррата
+
+                tr 
+                    td 
+                        p.component-page__table-text LYOBAC-D НD 094/095
+                    td 
+                        p.component-page__table-text Термофильная культура с ароматоразующими шатммами
+                    td 
+                        p.component-page__table-text Для сыра Мацарелла–пицца, Качота
+
+                tr 
+                    td 
+                        p.component-page__table-text LYOBAC-D SC 094/095
+                    td 
+                        p.component-page__table-text Термофильная культура с ароматоразующими шатммами
+                    td 
+                        p.component-page__table-text Для сыра Качота или как основа для сыров с плесенью
+
+                tr 
+                    td 
+                        p.component-page__table-text Lyobac –D DHS
+                    td 
+                        p.component-page__table-text Мезотермофильная культура с ароматоразующими шатммами
+                    td 
+                        p.component-page__table-text Для сыров с высокой температурой 2-го нагревания, в т.ч Маасдам, Швейцарский
+
+                tr 
+                    td 
+                        p.component-page__table-text Lyobac –D FEB 2.0
+                    td 
+                        p.component-page__table-text Cмесь термомезотермофильных культур с ароматоразующими шатммами
+                    td 
+                        p.component-page__table-text Для сыров Фета и Брынза
+        
+            table.component-page__table.category 
+                tr 
+                    td Защитные заквасочные культуры
+
+            table.component-page__table
+                tr 
+                    td 
+                        p.component-page__table-text LYOBAC-D PROBIALAC MXP-LRPS 100
+                    td 
+                        p.component-page__table-text Смесь штаммов подавляющих развитие посторонней нежелательной микрофлоры
+                    td 
+                        p.component-page__table-text Защитная культура для сыров и творога для предотвращения развития психрофилов, дрожжей, плесени, БГКП, продление срока хранения продукта.
+
+                tr 
+                    td 
+                        p.component-page__table-text LYOBAC-D PROBIALAC BS
+                    td 
+                        p.component-page__table-text Смесь штаммов подавляющих развитие посторонней нежелательной микрофлоры
+                    td 
+                        p.component-page__table-text Защитная культура для сыров и творога для предотвращения развития дрожжей, плесени, БГКП, продление срока хранения продукта.
+
+            table.component-page__table.category 
+                tr 
+                    td Культуры для изготовления производственной закваски для сыров
+
+            table.component-page__table
+                tr 
+                    td 
+                        p.component-page__table-text START FD/04/05
+                    td 
+                        p.component-page__table-text Смесь мезофильных штаммов
+                    td 
+                        p.component-page__table-text Закваска производственная для российской группы сыров
+
+                tr 
+                    td 
+                        p.component-page__table-text START NT
+                    td 
+                        p.component-page__table-text Смесь мезофильных штаммов
+                    td 
+                        p.component-page__table-text Закваска производственная для голландской группы сыров, в т.ч. Маасдам
+        
+        .container
+            .component-page__info 
+                img.component-page__info-icon(src="images/icon-info-circle.svg" alt="icon-info-circle")
+                p.component-page__info-text Компания ОптиМилк может предоставить необходимое количество образца закваски для отработки в промышленных условиях.
+
+
+    +main-feedback

@@ -1,0 +1,138 @@
+.news-page {
+    position: relative;
+
+    &__bg {
+        position: absolute;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        z-index: -1;
+        user-select: none;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: -2px;
+            width: 100%;
+            height: 34px;
+            background-color: #fff;
+        }
+
+        .img {
+            position: absolute;
+            top: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2320px;
+            height: 345px;
+        }
+    }
+
+    &__box {
+        padding-top: 64px;
+
+        @media (max-width: $breakpoint-lg) {
+            padding-top: 40px;
+        }
+    }
+
+    &_flex {
+        display: flex;
+
+        @media (max-width: $breakpoint-lg) {
+            flex-direction: column;
+        }
+    }
+
+    &__topic {
+        font-size: 20px;
+        line-height: 23px;
+        text-transform: uppercase;
+        font-weight: normal;
+        margin-right: 197px;
+        color: $color-gray;
+        font-family: $main-font;
+
+        @media (max-width: $breakpoint-xl) {
+            margin-right: 206px;
+        }
+        @media (max-width: $breakpoint-lg) {
+            margin-bottom: 24px;
+            font-size: 16px;
+        }
+    }
+
+    &__text-description {
+        font-size: 36px;
+        line-height: 140%;
+        text-transform: uppercase;
+        color: $color-gray;
+        font-family: $main-font;
+        font-weight: normal;
+
+        @media (max-width: $breakpoint-xl) {
+            font-size: 30px;
+        }
+        @media (max-width: $breakpoint-lg) {
+            width: 100%;
+            font-size: 24px;
+        }
+    }
+
+    &__text-subdescription {
+        margin-top: 32px;
+        color: $color-gray;
+        font-size: 18px;
+        line-height: 150%;
+        font-family: $main-font;
+    }
+
+    &__sub-box {
+        display: flex;
+        margin-top: 32px;
+        @media (max-width: $breakpoint-md) {
+            flex-direction: column;
+        }
+    }
+
+    &__sub-box-topic {
+        font-size: 22px;
+        line-height: 140%;
+        color: $color-gray;
+        font-family: $main-font;
+        width: 289px;
+        margin-right: 42px;
+        font-weight: bold;
+
+        @media (max-width: $breakpoint-xl) {
+            width: 224px;
+            margin-right: 30px;
+            font-size: 18px;
+        }
+        @media (max-width: $breakpoint-md) {
+            width: 100%;
+            margin-bottom: 32px;
+        }
+    }
+
+    &__sub-box-img {
+        max-width: 661px;
+        max-height: 430px;
+        object-fit: cover;
+        object-position: right;
+
+        @media (max-width: $breakpoint-xl) {
+            width: 392px;
+            height: 430px;
+        }
+        @media (max-width: $breakpoint-lg) {
+            width: 475px;
+            height: 430px;
+        }
+        @media (max-width: $breakpoint-md) {
+            max-width: 100%;
+            width: 328px;
+            height: 330px;
+        }
+    }
+}

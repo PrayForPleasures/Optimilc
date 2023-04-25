@@ -1,0 +1,65 @@
+.breadcrumbs-app {
+    position: relative;
+    background-color: #fff;
+    padding-top: 48px;
+
+    @media (max-width: $breakpoint-lg) {
+        padding-top: 24px;
+    }
+
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        display: flex;
+        align-items: flex-start;
+
+        &:last-child {
+            .breadcrumbs-app__icon,
+            .breadcrumbs-app__link {
+                color: $color-gray-D9;
+                opacity: 1;
+                transition: 0s all linear;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    &__icon {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        width: 16px;
+        height: 16px;
+        color: $color-main;
+        margin: 0px 4px;
+        padding-top: 9px;
+
+        .svg {
+            display: block;
+            margin-left: 1px;
+            width: 10px;
+            height: 5px;
+            transform: rotate(-90deg);
+        }
+    }
+
+    &__link {
+        color: $color-main;
+        transition: 0.3s all linear;
+
+        &:hover {
+            opacity: 0.75;
+        }
+    }
+
+    &__link-text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+    }
+}
